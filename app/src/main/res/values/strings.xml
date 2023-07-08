@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Bello</string>
+
+    <!--    welcome page-->
+    <string name="slogan">Collaborate tasks with people</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
+
+
+    <string name="signup">Sign up</string>
+    <string name="signin">Sign in</string>
+
+    <string name="signin_msg">New to Bello?</string>
+
+
+    <!--    sign in and up-->
+    <string name="required">Required*</string>
+
+    <!--    nav-->
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_sign_out">Sign Out</string>
+
+    <string name="image_contentDescription">Profile</string>
+    <string name="mobile">Mobile</string>
+    <string name="update">Update</string>
+    <string name="my_profile_title">My Profile</string>
+
+    <!--    Board-->
+    <string name="create_board_title">Create Board</string>
+    <string name="create">Create</string>
+    <string name="board_name">Board Name</string>
+    <string name="no_board_message">No Board available!</string>
+
+    <!--    Task-->
+    <string name="task_title">Tasks</string>
+</resources>

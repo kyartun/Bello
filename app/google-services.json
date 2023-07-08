@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787816149509",
+    "project_id": "bello-75fcd",
+    "storage_bucket": "bello-75fcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787816149509:android:e9e5dbfc16561823dca26c",
+        "android_client_info": {
+          "package_name": "com.example.bello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787816149509-k5liviiaskcn6gjec7hfn5kmhlsfjmoj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcIvsYouVCnYOueSGRbuN0oO2fwFbCjZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787816149509-k5liviiaskcn6gjec7hfn5kmhlsfjmoj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

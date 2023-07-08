@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MyProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_user_image"
+        android:layout_width="@dimen/profile_user_image_size"
+        android:layout_height="@dimen/profile_user_image_size"
+        android:contentDescription="@string/image_contentDescription"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_nav_user" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_name_marginTop"
+        android:paddingStart="@dimen/profile_screen_content_padding"
+        android:paddingEnd="@dimen/profile_screen_content_padding"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Username"
+            android:autoSizeTextType="uniform"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_name_marginTop"
+        android:paddingStart="@dimen/profile_screen_content_padding"
+        android:paddingEnd="@dimen/profile_screen_content_padding"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_name_marginTop"
+        android:paddingStart="@dimen/profile_screen_content_padding"
+        android:paddingEnd="@dimen/profile_screen_content_padding"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:hint="Mobile" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_btn_update_marginTop"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/update"
+        android:background="@color/primary"
+        >
+    </Button>
+
+</LinearLayout>

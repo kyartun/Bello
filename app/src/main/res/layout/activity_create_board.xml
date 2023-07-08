@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreateBoardActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_create_board"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/primary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/create_board_img"
+        android:layout_width="@dimen/profile_user_image_size"
+        android:layout_height="@dimen/profile_user_image_size"
+        android:contentDescription="@string/image_contentDescription"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/baseline_add_circle_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_name_marginTop"
+        android:paddingStart="@dimen/profile_screen_content_padding"
+        android:paddingEnd="@dimen/profile_screen_content_padding"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_board_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="@string/board_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/create_board_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_btn_update_marginTop"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/create"
+        android:background="@color/primary"
+        >
+    </Button>
+
+</LinearLayout>
